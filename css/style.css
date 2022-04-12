@@ -1,0 +1,678 @@
+    /*EMPIEZA EL INDEX*/
+
+
+    .container-index {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
+        gap: 0px 0px; 
+        height: 98vh;
+        grid-template-areas: 
+        "header"
+        "title"
+        "main"
+        "footer"
+        "footer-1"
+        ; 
+    }
+    .header{
+        grid-area: header;
+    }
+    .title{
+        grid-area: title;
+    }
+    .main { 
+        grid-area: main;
+        display: flex;   
+        justify-content: center;
+        height: 500px;
+    }
+    .footer { 
+        grid-area: footer; 
+        color: aliceblue;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer-wsp{
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+    }
+    .footer-wsp-img{
+        height: 70px;
+        width: 70px;
+    }
+    .footer-1{
+        grid-area: footer-1;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+    .header-nav {  
+        display: flex;
+        justify-content: center;
+        font-family: 'absolute';
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        padding: 5px;
+    }
+    li{
+        list-style: none;
+        font-size: 23px;
+        width: 200px;
+        margin: 1px;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 500px;
+        width: 500px;
+    }
+    .header-nav-celu{
+        display: none;
+    }
+
+        /* TERMINA EL INDEX */
+
+
+        /* EMPIEZA MEDIA TABLET INDEX */
+
+            /* INDEX */
+
+    @media (max-width: 1023px){
+        .container-index{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
+        gap: 0px 0px; 
+        height: 98vh;
+        grid-template-areas: 
+        "header"
+        "title"
+        "main"
+        "footer"
+        "footer-1"
+        ;    
+        }
+        .header-nav {  
+            display: flex;
+            justify-content: center;
+            font-family: 'absolute';
+            width: auto;
+        }
+        a{
+            font-size: 20px
+        }
+        ul{
+            width: 800px;
+            padding: 0;
+        }
+        li{
+            width: 250px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .main{
+            height: 600px;
+        }
+        main div img{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 450px;
+            width: auto;
+        }
+        .logo{
+        display: flex;
+        align-items: center;
+        }
+    }
+
+        /* TERMINA MEDIA TABLET INDEX */
+
+
+        /* EMPIEZA MEDIA CELULAR INDEX */
+
+
+    @media (max-width: 500px) {
+        body{
+            background-image: none;
+        }
+        .fondo{
+            background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(128, 128, 128));
+        }
+        .header-nav{
+            display: none;
+        }
+        .header-nav-celu{
+            display: flex;
+            width: 100%;
+            font-family: 'absolute';
+        }
+        a{
+            font-size: 9px
+        }
+        ul{
+            margin: 5px;
+            width: 470px;
+            padding: 5px;
+        }
+        li{
+            border: solid 1px;
+            border-color: #fff;
+            border-radius: 4px; 
+            padding: 1px;
+            margin: 1px;
+            
+        }
+        main div img{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 400px;
+            width: auto;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            height: 600px;
+        }
+        .main{
+        height: auto;
+        }
+        .footer{
+            height: 80px;
+        }
+        .footer-wsp{
+            display: flex ;
+            align-items: flex-end;
+        }
+        .footer-wsp-img {
+            height: 55px;
+            width: 55px;
+        }
+
+    }
+        /* TERMINA MEDIA CELULAR INDEX */
+
+        /* EMPIEZA LA BABERIA Y EQUIPO */
+
+
+        .container-barberia {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+            gap: 0px 0px;
+            height: 100vh;
+            margin: 0;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "grid-heard-nav "
+            "grid-title-labarberia "
+            "grid-main-labarberia"
+            "grid-footer-labarberia ";
+        }
+        .header-nav-celu{
+            display: none;
+        }
+        .grid-heard-nav { 
+            grid-area: grid-heard-nav; 
+            display: flex;
+            justify-content: center;
+            font-family: 'absolute';
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            padding: 5px;
+        }
+        li{
+            list-style: none;
+            font-size: 23px;
+            width: 200px;
+            margin: 1px;
+            text-align: center;
+        }
+        .grid-title-labarberia { 
+            grid-area: grid-title-labarberia; 
+            color: #fff;
+            text-align: center;
+            font-family: 'absolute';
+            font-size: 25px;
+        }
+        .grid-main-labarberia {  
+            grid-area: grid-main-labarberia;
+            margin: 10px 0px;
+        }
+        .grid-foto-labarberia {
+            height: 550px;
+            width: 800px;
+            margin-left: 100px;
+        }
+        .grid-footer-labarberia { 
+            grid-area: grid-footer-labarberia; 
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            background-color: #fff;
+            max-width: 100%;
+            height: 250px;
+        }
+        .grid-texto-labarberia{
+            float: right;
+            font-size: 20px;
+            width: 50%;
+            color: #fff;
+        }
+        .grid-texto-nuestroequipo{
+            border: solid;
+            border-color: rgb(255, 255, 255);
+            margin: 5px;
+            padding: 3px;
+            color: rgb(255, 255, 255);
+        }
+        .grid-texto-nuestroequipo:hover{
+            color: black;
+            background-color: rgb(248, 188, 60);
+            border-color: rgb(248, 188, 60);
+        }
+        .grid-footer1{
+            display: flex;
+            justify-content: center;
+        }
+        .redes{
+            display: flex;
+            float: right;
+            margin: 5px;
+        }
+    
+
+        /* TERMINA LA BABERIA */
+
+
+        /* EMPIEZA MEDIA TABLET BARBERIA */
+
+        @media (max-width: 1023px){
+        .container-barberia {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+            gap: 0px 0px;
+            margin: 0;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "grid-heard-nav "
+            "grid-title-labarberia "
+            "grid-main-labarberia"
+            "grid-footer-labarberia ";
+        }
+        
+        .grid-heard-nav { 
+            grid-area: grid-heard-nav; 
+            display: flex;
+            justify-content: center;
+            font-family: 'absolute';
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            padding: 5px;
+        }
+        li{
+            list-style: none;
+            font-size: 23px;
+            width: 200px;
+            margin: 1px;
+            text-align: center;
+        }
+        .grid-title-labarberia {  
+            color: #fff;
+            text-align: center;
+            font-family: 'absolute';
+            font-size: 20px;
+        }
+        .grid-main-labarberia {  
+            margin: 10px 0px;
+        }
+        .grid-foto-labarberia {
+            height: 250px;
+            width: 400px;
+            margin-left: 5px;
+        }
+        .grid-footer-labarberia {  
+            color: rgb(0, 0, 0);
+            font-size: 10px;
+            background-color: #fff;
+            max-width: 100%;
+            height: 250px;
+        }
+        .grid-texto-labarberia{
+            float: right;
+            font-size: 15px;
+            width: 50%;
+            color: #fff;
+        }
+        .grid-texto-nuestroequipo{
+            border: solid;
+            border-color: rgb(255, 255, 255);
+            margin: 5px;
+            padding: 3px;
+            color: rgb(255, 255, 255);
+        }
+        .grid-texto-nuestroequipo:hover{
+            color: black;
+            background-color: #fff;
+        }
+        .grid-footer1{
+            display: flex;
+            justify-content: center;
+        }
+        .redes{
+            display: flex;
+            float: right;
+            margin: 5px;
+        }
+        div img{
+            height: 40px;
+        }
+    }
+        /* TERMINA MEDIA TABLET BARBERIA*/
+
+        /* EMPIEZA MEDIA CELULAR BARBERIA*/
+
+        @media (max-width: 500px) {
+            .grid-heard-nav{
+                display: none;
+            }
+            .header-nav-celu{
+                display: flex;
+                justify-content: center;
+                font-family: 'absolute';
+            }
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+                padding: 5px;
+            }
+            li{
+                list-style: none;
+                font-size: 23px;
+                width: 200px;
+                margin: 1px;
+                text-align: center;
+            }
+            .grid-title-labarberia {  
+                color: #fff;
+                text-align: center;
+                font-family: 'absolute';
+                font-size: 20px;
+            }
+            .grid-main-labarberia {  
+                height: 600px;
+
+            }
+            .grid-foto-labarberia {
+                height: 300px;
+                width: 450px;
+                display: flex;
+                margin: auto;
+            }
+            .grid-footer-labarberia { 
+                grid-area: grid-footer-labarberia; 
+                color: rgb(0, 0, 0);
+                font-size: 6px;
+                background-color: #fff;
+                max-width: 100%;
+                height: 150px;
+            }
+            .grid-texto-labarberia{
+                font-size: 15px;
+                width: 100%;
+                color: #fff;
+                text-align: center;
+            }
+            .grid-texto-nuestroequipo{
+                border: solid;
+                border-color: rgb(255, 255, 255);
+                margin: 5px;
+                padding: 3px;
+                color: rgb(255, 255, 255);
+            }
+            .grid-texto-nuestroequipo:hover{
+                color: black;
+                background-color: #fff;
+            }
+            .grid-footer1{
+                display: flex;
+                justify-content: center;
+            }
+            .redes{
+                display: flex;
+                float: right;
+                margin: 5px;
+            }
+            div img{
+                height: 20px;
+            }
+    }
+
+        /* TERMINA MEDIA CELULAR BARBERIA */
+
+
+        /* EMPIEZA LAS COLECCIONES */
+
+        .container-colecciones {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+            gap: 0px 0px;
+            margin: 0;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "grid-heard-nav"
+            "grid-title-colecciones"
+            "grid-main-colecciones"
+            "grid-footer-labarberia ";
+        }
+        .grid-title-colecciones{
+            grid-area: grid-title-colecciones;
+            color: #fff;
+            text-align: center;
+            font-family: 'absolute';
+            font-size: 25px;
+        }
+        .grid-main-colecciones{
+            grid-area: grid-main-colecciones;
+        }
+        .grid-main-imagenes{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 700px;
+        }
+        .grid-main-imagenes1{
+            height: 600px;
+            width: 900px;
+        }
+
+
+        /* TERMINAN LAS COLECCIONES */
+
+        /* EMPIEZAN LOS SERVICIOS */
+
+        .container-servicios {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+            gap: 0px 0px;
+            margin: 0;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "grid-heard-nav"
+            "grid-title-servicios"
+            "grid-main-servicios"
+            "grid-footer-labarberia ";
+        }
+        .grid-title-servicios{
+            grid-area: grid-title-servicios;
+            color: #fff;
+            text-align: center;
+            font-family: 'absolute';
+            font-size: 25px;
+        }
+        .grid-main-servicios{
+            grid-area: grid-main-servicios;
+        }
+        .grid-main-table{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 600px;
+        }
+        td{
+            width: 400px;
+            height: 100px;
+        }
+
+        /* EMPIEZAN LOS CONTACTOS */
+
+        .container-contacto {  
+            display: grid;
+            gap: 20px 0px;
+            margin: 0;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "grid-heard-nav"
+            "grid-title-contacto"
+            "grid-main-contacto"
+            "grid-footer-labarberia ";
+        }
+        .grid-title-contacto{
+            grid-area: grid-title-contacto;
+            color: #fff;
+            text-align: center;
+            font-family: 'absolute';
+            font-size: 25px;
+        }
+        .grid-main-contacto{
+            grid-area: grid-main-contacto;
+            display: grid;
+            margin: 0 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .grid-main-iframe{
+            grid-area: grid-main-iframe;
+            grid-column-start: 1;
+        }
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+        .grid-main-contactanos{
+            grid-area: grid-main-contactanos;
+            grid-column-start: 2;
+            background-color: rgb(240, 182, 58);
+        }
+        .grid-main-formulario{
+            grid-area: grid-main-formulario;
+            background-color: rgb(48, 48, 48);
+            grid-column-start: 3;
+        }
+        #datos{
+            text-align: center;
+            font-family: 'absolute';
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            margin: 5px;
+            border: none;
+            margin: 5px;
+            padding: 0;
+            background: transparent;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 400px;
+            background: transparent;
+            margin-left: 2px;
+            resize: none;
+            border: none;
+        }
+        ::placeholder{
+            font-size: 25px;
+        }
+        .enviar{
+            font-size: 25px;
+            color:#fff;
+            background-color: rgb(248, 188, 60);
+        }
+
+        /* TERMINAN LOS CONTACTOS */
+
+
+        /* TODAS LAS PAGES */
+        .fondonegro{
+            background-color: rgb(59, 59, 59);
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-family: 'absolute';
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: 'absolute';
+            src: url(../fuentes/aAbsoluteEmpire.ttf);
+        }
+
+        .grid-heard-nav{
+            background: linear-gradient(to bottom, black, transparent);
+        } 
+
+        /* TODAS LAS PAGES */
+table{
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    right: 550px;    
+    height: 500px;
+    width: 800px;
+    background-color: #fff;
+    font-size: 30px;
+}
+td{
+    border-style: solid
+}
+.letra_grande{
+    font-size: 25px;
+}
