@@ -99,6 +99,10 @@
         "footer-1"
         ;    
         }
+        .logo-inicio{
+            height: 70px;
+            width: 100px;
+        }
         .header-nav {  
             display: flex;
             justify-content: center;
@@ -162,14 +166,6 @@
             width: 470px;
             padding: 5px;
         }
-        li{
-            border: solid 1px;
-            border-color: #fff;
-            border-radius: 4px; 
-            padding: 1px;
-            margin: 1px;
-            
-        }
         main div img{
             display: flex;
             flex-wrap: wrap;
@@ -197,7 +193,7 @@
             width: 55px;
         }
 
-    }
+}
         /* TERMINA MEDIA CELULAR INDEX */
 
         /* EMPIEZA LA BABERIA Y EQUIPO */
@@ -249,6 +245,7 @@
             text-align: center;
             font-family: 'absolute';
             font-size: 25px;
+            margin: 5px;
         }
         .grid-main-labarberia {  
             grid-area: grid-main-labarberia;
@@ -514,7 +511,16 @@
             height: 600px;
             width: 900px;
         }
-
+        .w-100 {
+            width: 60% !important;
+        }
+        div#carouselExampleControls {
+            width: 55%;
+        }
+        main.grid-main-colecciones {
+            display: flex;
+            justify-content: center;
+        }
 
         /* TERMINAN LAS COLECCIONES */
 
@@ -561,6 +567,9 @@
         td{
             border: 3px rgb(0, 0, 0) solid ;
         }
+        .table{
+            width: 80% !important;
+        }
 
         /* TERMINAN LOS SERVICIOS */
 
@@ -606,7 +615,7 @@
             grid-area: grid-main-contactanos;
             grid-column-start: 2;
             height: 600px;
-            background-color: rgb(240, 182, 58);
+            background-color: #48e;
             width: 621px;
             display: flex;
             flex-wrap: wrap;
@@ -634,11 +643,11 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            margin: 5px 0;
         }
         .datos{
             text-align: center;
             font-family: 'absolute';
+            color: black;
         }
         .input{
             height: 40px;
@@ -653,9 +662,9 @@
         .input:hover{
             background: linear-gradient(to bottom, transparent, #fff);
         }
-        textarea{
+        .textarea{
             width: 600px;
-            height: 300px;
+            height: 350px;
             background: transparent;
             margin: 5px 5px;
             resize: none;
@@ -663,7 +672,7 @@
             color: #fff;
             font-size: 20px;
         }
-        textarea:hover{
+        .textarea:hover{
             background: linear-gradient(to bottom, transparent, #fff);
         }
         ::placeholder{
@@ -720,8 +729,20 @@
             background-size: 100% 2px;
         }
         .letra_grande{
-            font-size: 25px;
+            font-size: 25px !important;
         }
-        
+        .nav-link{
+            color: #fff !important;
+            font-family: 'absolute' !important;
+        }
+        .navbar{
+            background: linear-gradient(to top, grey, ) !important;
+        }
+        .navbar-collapse {
+            justify-content: center !important;
+        }
+        .navbar-light .navbar-toggler {
+            border-color: rgb(255 255 255);
+        }
 
         /* TODAS LAS PAGES */
