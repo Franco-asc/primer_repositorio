@@ -737,6 +737,7 @@
         }
         .navbar{
             background: linear-gradient(to top, grey, ) !important;
+            z-index: 100;
         }
         .navbar-collapse {
             justify-content: center !important;
