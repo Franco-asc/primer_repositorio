@@ -86,7 +86,6 @@
 
     @media (max-width: 1023px){
         .container-index{
-        display: grid; 
         grid-template-columns: 1fr; 
         grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
         gap: 0px 0px; 
@@ -723,8 +722,7 @@
             transition: background-size .3s;
         }
         
-        a:hover,
-        a:focus {
+        a:hover {
             color: rgb(218, 218, 218);
             background-size: 100% 2px;
         }
@@ -746,4 +744,68 @@
             border-color: rgb(255 255 255);
         }
 
+        .pie-pagina{
+            width: 100%;
+            background-color: #112a42;
+        }
+        .pie-pagina .grupo-1{
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding: 15px 0px;
+
+        }
+        .pie-pagina .grupo-1 .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pie-pagina .grupo-1 .box figure img{
+            width: 20rem;
+            height: 15rem;
+        }
+        .pie-pagina .grupo-1 .box h2{
+            color: #fff;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        .pie-pagina .grupo-1 .box p{
+            color: #efefef;
+            margin-bottom: 10px;
+        }
+        .pie-pagina .grupo-1 .red-social a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            margin-right: 10px;
+            background-color: #0d2033;
+            text-align: center;
+            transition: all 300ms ease;
+        }
+        .pie-pagina .grupo-1 .red-social a:hover{
+            color: aqua;
+        }
+        .pie-pagina .grupo-2{
+            background-color: #0d2033;
+            padding: 15px 0px;
+            text-align: center;
+            color: #fff;
+        }
+        @media screen and (max-width:768px){
+            .pie-pagina .grupo-1{
+                width: 90%;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 30px;
+                padding: 35px 0px;
+    
+        }
+    }
         /* TODAS LAS PAGES */
