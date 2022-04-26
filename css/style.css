@@ -601,8 +601,8 @@ li{
     .grid-main-iframe{
         grid-area: grid-main-iframe;
         grid-column-start: 1;
-        height: 600px;
-        width: 621px;
+        height: 37.5rem;
+        width: 38.8rem;
         display: flex;
         flex-wrap: wrap;
     }
@@ -613,9 +613,9 @@ li{
     .grid-main-contactanos{
         grid-area: grid-main-contactanos;
         grid-column-start: 2;
-        height: 600px;
+        height: 37.5rem;
         background-color: #48e;
-        width: 621px;
+        width: 38.8rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -625,14 +625,12 @@ li{
         width: 500px;
         margin: 10px;
         font-family: 'absolute';
-    
-
     }
-    section p {
-        width: auto;
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
 
+    .contactanos-texto {
+        width: auto;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .grid-main-formulario{
         grid-area: grid-main-formulario;
@@ -647,10 +645,11 @@ li{
         text-align: center;
         font-family: 'absolute';
         color: black;
+        width: 38rem;
     }
     .input{
         height: 40px;
-        width: 600px;
+        width: 38rem;
         margin: 5px;
         border: none;
         padding: 0;
@@ -662,8 +661,8 @@ li{
         background: linear-gradient(to bottom, transparent, #fff);
     }
     .textarea{
-        width: 600px;
-        height: 350px;
+        width: 38rem;
+        height: 17rem;
         background: transparent;
         margin: 5px 5px;
         resize: none;
@@ -680,8 +679,8 @@ li{
     }
     .enviar{
         font-size: 25px;
-        width: 200px;
-        margin-left: 5px;
+        width: 80%;
+        margin: auto;
         color:#fff;
         border: none;
         background-color: rgb(221, 158, 22);
@@ -689,7 +688,26 @@ li{
     .enviar:hover{
         background-color: rgb(255, 202, 88)
     }
-    
+
+    @media (max-width:1023px) {
+        .grid-main-contacto{
+            display:block;
+        }
+        .grid-main-iframe{
+            grid-area: grid-main-iframe;
+            grid-column-start: 1;
+            height: 37.5rem;
+            width: 100%;
+        }
+        .grid-main-contactanos{
+            grid-area: grid-main-contactanos;
+            grid-column-start: 2;
+            height: 37.5rem;
+            background-color: #48e;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
     /* TERMINAN LOS CONTACTOS */
 
 
@@ -714,6 +732,7 @@ li{
     } 
     a{
         color: #fff;
+        font-size: 1rem;
         text-decoration: none;
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
