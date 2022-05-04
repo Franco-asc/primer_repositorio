@@ -7,9 +7,29 @@ $tamaño-texto: 2rem;
 
 $color-container: gray;
 $color-titulos: #fff;
-
+$color-boton: rgb(214, 164, 55);
 
 // MEDIAS
 
 $desktop: 1024px;
 $mobile: 500px;
+
+// Maps
+
+$mapredes:(whatsapp: green, instagram:#fff, facebook:blue);
+
+@each $red, $color in $mapredes {
+    .#{$red}{
+        color: $color !important;
+    }
+}
+// Extend
+
+
+// Mixin
+
+@mixin titulos {
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 1.8rem;
+}

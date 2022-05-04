@@ -1,829 +1,518 @@
+.whatsapp {
+  color: green !important; }
+
+.instagram {
+  color: #fff !important; }
+
+.facebook {
+  color: blue !important; }
+
 /*EMPIEZA EL INDEX*/
-
-
 .container-index {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
-    gap: 0px 0px; 
-    height: 98vh;
-    grid-template-areas: 
-    "header"
-    "title"
-    "main"
-    "footer"
-    "footer-1"
-    ; 
-}
-.header{
-    grid-area: header;
-}
-.title{
-    grid-area: title;
-}
-.main { 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr;
+  gap: 0px 0px;
+  height: 98vh;
+  grid-template-areas: "header" "title" "main" "footer" "footer-1"; }
+  .container-index .header {
+    grid-area: header; }
+  .container-index .title {
+    grid-area: title; }
+  .container-index .main {
     grid-area: main;
-    display: flex;   
+    display: flex;
     justify-content: center;
-    height: 500px;
-}
-.footer { 
-    grid-area: footer; 
+    height: 500px; }
+  .container-index .footer {
+    grid-area: footer;
     color: aliceblue;
     display: flex;
-    justify-content: flex-end;
-}
-.footer-wsp{
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
-}
-.footer-wsp-img{
-    height: 70px;
-    width: 70px;
-}
-.footer-1{
+    justify-content: flex-end; }
+    .container-index .footer .footer-wsp {
+      margin-right: 1.2rem;
+      font-size: 5rem;
+      text-decoration: none;
+      color: aliceblue; }
+      .container-index .footer .footer-wsp:hover {
+        color: green; }
+  .container-index .footer-1 {
     grid-area: footer-1;
     color: aliceblue;
     display: flex;
-    justify-content: center;
-}
-.header-nav {  
+    justify-content: center; }
+
+a {
+  font-size: 1.2rem; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px; }
+
+li {
+  list-style: none;
+  width: 25%;
+  margin: .1rem;
+  text-align: center; }
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 31.25rem;
+  width: 31.25rem; }
+
+/* TERMINA EL INDEX */
+/* EMPIEZA MEDIA TABLET INDEX */
+/* INDEX */
+@media (max-width: 1023px) {
+  .container-index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr;
+    gap: 0px 0px;
+    height: 98vh;
+    grid-template-areas: "header" "title" "main" "footer" "footer-1"; }
+  a {
+    font-size: 1rem; }
+  ul {
+    width: 800px;
+    padding: 0; }
+  li {
+    width: 250px;
+    margin: 5px;
+    padding: 5px; }
+  .main {
+    height: 600px; }
+  main div img {
+    height: 28,12rem;
+    width: auto; }
+  .logo {
+    align-items: center; } }
+
+/* TERMINA MEDIA TABLET INDEX */
+/* EMPIEZA MEDIA CELULAR INDEX */
+@media (max-width: 500px) {
+  .container-index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr .1fr 0.1fr;
+    gap: 0px 0px;
+    height: 98vh;
+    grid-template-areas: "header" "main" "footer" "footer-1"; }
+  body {
+    background-image: none; }
+  .fondo {
+    background: linear-gradient(to bottom, #000, grey); }
+  a {
+    font-size: .8rem; }
+  ul {
+    margin: 5px;
+    width: 470px;
+    padding: 5px; }
+  main div img {
+    height: 25rem; }
+  .footer {
+    height: 5rem; }
+  small {
+    display: flex;
+    align-items: center; } }
+
+/* TERMINA MEDIA CELULAR INDEX */
+/* EMPIEZA LA BABERIA Y EQUIPO */
+.container-barberia {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+  gap: 0px 0px;
+  height: 100vh;
+  margin: 0;
+  grid-auto-flow: row;
+  grid-template-areas: "grid-heard-nav " "grid-title-labarberia " "grid-main-labarberia" "grid-footer-labarberia"; }
+  .container-barberia .grid-title-labarberia {
+    grid-area: grid-title-labarberia;
+    color: #fff;
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 2rem;
+    margin: 5px; }
+  .container-barberia .grid-main-labarberia {
+    grid-area: grid-main-labarberia;
+    margin: 1rem 0rem; }
+  .container-barberia .grid-foto-labarberia {
+    height: 34.3rem;
+    width: 50rem;
+    margin: 0rem 2rem; }
+  .container-barberia .grid-texto-labarberia {
+    float: right;
+    font-size: 1rem;
+    width: 50%;
+    color: black; }
+    .container-barberia .grid-texto-labarberia .grid-texto-nuestroequipo {
+      border: solid;
+      border-color: #fff;
+      margin: 5px;
+      padding: 3px;
+      color: #fff; }
+      .container-barberia .grid-texto-labarberia .grid-texto-nuestroequipo:hover {
+        color: black;
+        background-color: #d6a437;
+        border-color: #d6a437; }
+
+.grid-footer1 {
+  display: flex;
+  justify-content: center; }
+
+.redes {
+  display: flex;
+  float: right;
+  margin: 5px; }
+
+/* TERMINA LA BABERIA */
+/* EMPIEZA MEDIA TABLET BARBERIA */
+@media (max-width: 1023px) {
+  .container-barberia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+    gap: 0px 0px;
+    margin: 0;
+    grid-auto-flow: row;
+    grid-template-areas: "grid-heard-nav " "grid-title-labarberia " "grid-main-labarberia" "grid-footer-labarberia "; }
+  .grid-heard-nav {
+    grid-area: grid-heard-nav;
     display: flex;
     justify-content: center;
-    font-family: 'absolute';
-}
-ul{
+    font-family: 'absolute'; }
+  a {
+    text-decoration: none;
+    color: #fff; }
+  ul {
     display: flex;
     justify-content: center;
     margin: 10px;
-    padding: 5px;
-}
-li{
+    padding: 5px; }
+  li {
     list-style: none;
     font-size: 23px;
     width: 200px;
     margin: 1px;
+    text-align: center; }
+  .grid-title-labarberia {
+    color: #fff;
     text-align: center;
-}
-.logo{
+    font-family: 'absolute';
+    font-size: 1.5rem; }
+  .grid-foto-labarberia {
+    height: 15.6rem;
+    width: 20rem;
+    margin: auto; }
+  .grid-main-labarberia {
+    height: auto; }
+    .grid-main-labarberia .grid-texto-labarberia {
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      color: black; }
+  .grid-footer1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 500px;
-    width: 500px;
-}
-.header-nav-celu{
-    display: none;
-}
+    justify-content: center; } }
 
-    /* TERMINA EL INDEX */
-
-
-    /* EMPIEZA MEDIA TABLET INDEX */
-
-        /* INDEX */
-
-@media (max-width: 1023px){
-    .container-index{
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
-    gap: 0px 0px; 
-    height: 98vh;
-    grid-template-areas: 
-    "header"
-    "title"
-    "main"
-    "footer"
-    "footer-1"
-    ;    
-    }
-    .logo-inicio{
-        height: 70px;
-        width: 100px;
-    }
-    .header-nav {  
-        display: flex;
-        justify-content: center;
-        font-family: 'absolute';
-        width: auto;
-    }
-    a{
-        font-size: 20px
-    }
-    ul{
-        width: 800px;
-        padding: 0;
-    }
-    li{
-        width: 250px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .main{
-        height: 600px;
-    }
-    main div img{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 450px;
-        width: auto;
-    }
-    .logo{
-    display: flex;
-    align-items: center;
-    }
-}
-
-    /* TERMINA MEDIA TABLET INDEX */
-
-
-    /* EMPIEZA MEDIA CELULAR INDEX */
-
-
+/* TERMINA MEDIA TABLET BARBERIA*/
+/* EMPIEZA MEDIA CELULAR BARBERIA*/
 @media (max-width: 500px) {
-    body{
-        background-image: none;
-    }
-    .fondo{
-        background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(128, 128, 128));
-    }
-    .header-nav{
-        display: none;
-    }
-    .header-nav-celu{
-        display: flex;
-        width: 100%;
-        font-family: 'absolute';
-    }
-    a{
-        font-size: 9px
-    }
-    ul{
-        margin: 5px;
-        width: 470px;
-        padding: 5px;
-    }
-    main div img{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 400px;
-        width: auto;
-    }
-    .logo{
-        display: flex;
-        align-items: center;
-        height: 600px;
-    }
-    .main{
-    height: auto;
-    }
-    .footer{
-        height: 80px;
-    }
-    .footer-wsp{
-        display: flex ;
-        align-items: flex-end;
-    }
-    .footer-wsp-img {
-        height: 55px;
-        width: 55px;
-    }
+  .container-barberia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+    gap: 0px 0px;
+    margin: 0;
+    grid-auto-flow: row;
+    grid-template-areas: "grid-heard-nav " "grid-title-labarberia " "grid-main-labarberia" "grid-footer-labarberia "; }
+  .grid-title-labarberia {
+    color: #fff;
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 1.1rem; }
+  .grid-main-labarberia {
+    height: auto; }
+    .grid-main-labarberia .grid-texto-labarberia {
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      color: black; }
+  .grid-foto-labarberia {
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    margin: auto; }
+  .grid-footer-labarberia {
+    grid-area: grid-footer-labarberia; } }
 
-}
-    /* TERMINA MEDIA CELULAR INDEX */
+/* TERMINA MEDIA CELULAR BARBERIA */
+/* EMPIEZA LAS COLECCIONES */
+.container-colecciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.1fr 2.2fr 1fr;
+  gap: 0px 0px;
+  margin: 0;
+  grid-auto-flow: row;
+  grid-template-areas: "grid-heard-nav" "grid-title-colecciones" "grid-main-colecciones" "grid-footer-labarberia "; }
+  .container-colecciones .grid-title-colecciones {
+    grid-area: grid-title-colecciones;
+    color: #fff;
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 25px; }
+  .container-colecciones .grid-main-colecciones {
+    grid-area: grid-main-colecciones; }
+  .container-colecciones .grid-main-imagenes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 700px; }
+  .container-colecciones .grid-main-imagenes1 {
+    height: 600px;
+    width: 900px; }
 
-    /* EMPIEZA LA BABERIA Y EQUIPO */
+.w-100 {
+  width: 50%; }
 
+main.grid-main-colecciones {
+  display: flex;
+  justify-content: center; }
 
-    .container-barberia {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-        gap: 0px 0px;
-        height: 100vh;
-        margin: 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "grid-heard-nav "
-        "grid-title-labarberia "
-        "grid-main-labarberia"
-        "grid-footer-labarberia ";
-    }
-    .header-nav-celu{
-        display: none;
-    }
-    .grid-heard-nav { 
-        grid-area: grid-heard-nav; 
-        display: flex;
-        justify-content: center;
-        font-family: 'absolute';
-    }
-    a{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-    ul{
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        padding: 5px;
-    }
-    li{
-        list-style: none;
-        font-size: 23px;
-        width: 200px;
-        margin: 1px;
-        text-align: center;
-    }
-    .grid-title-labarberia { 
-        grid-area: grid-title-labarberia; 
-        color: #fff;
-        text-align: center;
-        font-family: 'absolute';
-        font-size: 25px;
-        margin: 5px;
-    }
-    .grid-main-labarberia {  
-        grid-area: grid-main-labarberia;
-        margin: 10px 0px;
-    }
-    .grid-foto-labarberia {
-        height: 550px;
-        width: 800px;
-        margin-left: 100px;
-    }
-    .grid-footer-labarberia { 
-        grid-area: grid-footer-labarberia; 
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-        background-color: #fff;
-        max-width: 100%;
-        height: 250px;
-    }
-    .grid-texto-labarberia{
-        float: right;
-        font-size: 20px;
-        width: 50%;
-        color: #fff;
-    }
-    .grid-texto-nuestroequipo{
-        border: solid;
-        border-color: rgb(255, 255, 255);
-        margin: 5px;
-        padding: 3px;
-        color: rgb(255, 255, 255);
-    }
-    .grid-texto-nuestroequipo:hover{
-        color: black;
-        background-color: rgb(248, 188, 60);
-        border-color: rgb(248, 188, 60);
-    }
-    .grid-footer1{
-        display: flex;
-        justify-content: center;
-    }
-    .redes{
-        display: flex;
-        float: right;
-        margin: 5px;
-    }
+/* TERMINAN LAS COLECCIONES */
+/* EMPIEZAN LOS SERVICIOS */
+.container-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.1fr 2fr 1fr;
+  gap: 0px 0px;
+  margin: 0;
+  grid-auto-flow: row;
+  grid-template-areas: "grid-heard-nav" "grid-title-servicios" "grid-main-servicios" "grid-footer-labarberia "; }
+  .container-servicios .grid-title-servicios {
+    grid-area: grid-title-servicios;
+    color: #fff;
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 25px; }
+  .container-servicios .grid-main-servicios {
+    grid-area: grid-main-servicios;
+    height: auto; }
+    .container-servicios .grid-main-servicios table {
+      border-style: solid;
+      border-color: black;
+      height: 500px;
+      width: 800px;
+      background-color: #fff;
+      font-size: 30px; }
+    .container-servicios .grid-main-servicios td {
+      border: 3px black solid; }
+    .container-servicios .grid-main-servicios .table {
+      width: 80% !important; }
+  .container-servicios .grid-main-table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 600px; }
 
-
-    /* TERMINA LA BABERIA */
-
-
-    /* EMPIEZA MEDIA TABLET BARBERIA */
-
-    @media (max-width: 1023px){
-    .container-barberia {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-        gap: 0px 0px;
-        margin: 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "grid-heard-nav "
-        "grid-title-labarberia "
-        "grid-main-labarberia"
-        "grid-footer-labarberia ";
-    }
-    
-    .grid-heard-nav { 
-        grid-area: grid-heard-nav; 
-        display: flex;
-        justify-content: center;
-        font-family: 'absolute';
-    }
-    a{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-    ul{
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        padding: 5px;
-    }
-    li{
-        list-style: none;
-        font-size: 23px;
-        width: 200px;
-        margin: 1px;
-        text-align: center;
-    }
-    .grid-title-labarberia {  
-        color: #fff;
-        text-align: center;
-        font-family: 'absolute';
-        font-size: 20px;
-    }
-    .grid-main-labarberia {  
-        margin: 10px 0px;
-    }
-    .grid-foto-labarberia {
-        height: 250px;
-        width: 400px;
-        margin-left: 5px;
-    }
-    .grid-footer-labarberia {  
-        color: rgb(0, 0, 0);
-        font-size: 10px;
-        background-color: #fff;
-        max-width: 100%;
-        height: 250px;
-    }
-    .grid-texto-labarberia{
-        float: right;
-        font-size: 15px;
-        width: 50%;
-        color: #fff;
-    }
-    .grid-texto-nuestroequipo{
-        border: solid;
-        border-color: rgb(255, 255, 255);
-        margin: 5px;
-        padding: 3px;
-        color: rgb(255, 255, 255);
-    }
-    .grid-texto-nuestroequipo:hover{
-        color: black;
-        background-color: #fff;
-    }
-    .grid-footer1{
-        display: flex;
-        justify-content: center;
-    }
-    .redes{
-        display: flex;
-        float: right;
-        margin: 5px;
-    }
-    div img{
-        height: 40px;
-    }
-}
-    /* TERMINA MEDIA TABLET BARBERIA*/
-
-    /* EMPIEZA MEDIA CELULAR BARBERIA*/
-
-    @media (max-width: 500px) {
-        .grid-heard-nav{
-            display: none;
-        }
-        .header-nav-celu{
-            display: flex;
-            justify-content: center;
-            font-family: 'absolute';
-        }
-        a{
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-        }
-        ul{
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-            padding: 5px;
-        }
-        li{
-            list-style: none;
-            font-size: 23px;
-            width: 200px;
-            margin: 1px;
-            text-align: center;
-        }
-        .grid-title-labarberia {  
-            color: #fff;
-            text-align: center;
-            font-family: 'absolute';
-            font-size: 20px;
-        }
-        .grid-main-labarberia {  
-            height: 600px;
-
-        }
-        .grid-foto-labarberia {
-            height: 300px;
-            width: 450px;
-            display: flex;
-            margin: auto;
-        }
-        .grid-footer-labarberia { 
-            grid-area: grid-footer-labarberia; 
-            color: rgb(0, 0, 0);
-            font-size: 6px;
-            background-color: #fff;
-            max-width: 100%;
-            height: 150px;
-        }
-        .grid-texto-labarberia{
-            font-size: 15px;
-            width: 100%;
-            color: #fff;
-            text-align: center;
-        }
-        .grid-texto-nuestroequipo{
-            border: solid;
-            border-color: rgb(255, 255, 255);
-            margin: 5px;
-            padding: 3px;
-            color: rgb(255, 255, 255);
-        }
-        .grid-texto-nuestroequipo:hover{
-            color: black;
-            background-color: #fff;
-        }
-        .grid-footer1{
-            display: flex;
-            justify-content: center;
-        }
-        .redes{
-            display: flex;
-            float: right;
-            margin: 5px;
-        }
-        div img{
-            height: 20px;
-        }
-}
-
-    /* TERMINA MEDIA CELULAR BARBERIA */
-
-
-    /* EMPIEZA LAS COLECCIONES */
-
-    .container-colecciones {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-        gap: 0px 0px;
-        margin: 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "grid-heard-nav"
-        "grid-title-colecciones"
-        "grid-main-colecciones"
-        "grid-footer-labarberia ";
-    }
-    .grid-title-colecciones{
-        grid-area: grid-title-colecciones;
-        color: #fff;
-        text-align: center;
-        font-family: 'absolute';
-        font-size: 25px;
-    }
-    .grid-main-colecciones{
-        grid-area: grid-main-colecciones;
-    }
-    .grid-main-imagenes{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        height: 700px;
-    }
-    .grid-main-imagenes1{
-        height: 600px;
-        width: 900px;
-    }
-    .w-100 {
-        width: 60% !important;
-    }
-    div#carouselExampleControls {
-        width: 55%;
-    }
-    main.grid-main-colecciones {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* TERMINAN LAS COLECCIONES */
-
-    /* EMPIEZAN LOS SERVICIOS */
-
-    .container-servicios {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-        gap: 0px 0px;
-        margin: 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "grid-heard-nav"
-        "grid-title-servicios"
-        "grid-main-servicios"
-        "grid-footer-labarberia ";
-    }
-    .grid-title-servicios{
-        grid-area: grid-title-servicios;
-        color: #fff;
-        text-align: center;
-        font-family: 'absolute';
-        font-size: 25px;
-    }
-    .grid-main-servicios{
-        grid-area: grid-main-servicios;
-    }
-    .grid-main-table{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        height: 600px;
-    }
-    table{
-        border-style: solid;
-        border-color: black;   
-        height: 500px;
-        width: 800px;
-        background-color: #fff;
-        font-size: 30px;
-    }
-    td{
-        border: 3px rgb(0, 0, 0) solid ;
-    }
-    .table{
-        width: 80% !important;
-    }
-
-    /* TERMINAN LOS SERVICIOS */
-
-    /* EMPIEZAN LOS CONTACTOS */
-
-    .container-contacto {  
-        display: grid;
-        gap: 20px 0px;
-        margin: 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "grid-heard-nav"
-        "grid-title-contacto"
-        "grid-main-contacto"
-        "grid-footer-labarberia ";
-    }
-    .grid-title-contacto{
-        grid-area: grid-title-contacto;
-        color: #fff;
-        text-align: center;
-        font-family: 'absolute';
-        font-size: 25px;
-    }
-    .grid-main-contacto{
-        grid-area: grid-main-contacto;
-        display: grid;
-        margin: 0 20px;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .grid-main-iframe{
-        grid-area: grid-main-iframe;
-        grid-column-start: 1;
-        height: 37.5rem;
-        width: 38.8rem;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    iframe{
+/* TERMINAN LOS SERVICIOS */
+/* EMPIEZAN LOS CONTACTOS */
+.container-contacto {
+  display: grid;
+  gap: 20px 0px;
+  margin: 0;
+  grid-auto-flow: row;
+  grid-template-areas: "grid-heard-nav" "grid-title-contacto" "grid-main-contacto" "grid-footer-labarberia "; }
+  .container-contacto .grid-title-contacto {
+    grid-area: grid-title-contacto;
+    color: #fff;
+    text-align: center;
+    font-family: 'absolute';
+    font-size: 25px; }
+  .container-contacto .grid-main-contacto {
+    grid-area: grid-main-contacto;
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .container-contacto .grid-main-contacto .grid-main-iframe {
+      grid-area: grid-main-iframe;
+      grid-column-start: 1;
+      height: 600px;
+      width: 621px;
+      display: flex;
+      flex-wrap: wrap; }
+      .container-contacto .grid-main-contacto .grid-main-iframe iframe {
         height: 100%;
-        width: 100%;
-    }
-    .grid-main-contactanos{
-        grid-area: grid-main-contactanos;
-        grid-column-start: 2;
-        height: 37.5rem;
-        background-color: #48e;
-        width: 38.8rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .contactanos{
+        width: 100%; }
+    .container-contacto .grid-main-contacto .grid-main-contactanos {
+      grid-area: grid-main-contactanos;
+      grid-column-start: 2;
+      height: 600px;
+      background-color: #48e;
+      width: 621px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .container-contacto .grid-main-contacto .grid-main-contactanos .contactanos {
         height: 50px;
         width: 500px;
         margin: 10px;
-        font-family: 'absolute';
-    }
-
-    .contactanos-texto {
-        width: auto;
-        font-size: 1.2rem;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .grid-main-formulario{
-        grid-area: grid-main-formulario;
-        background-color: rgb(48, 48, 48);
-        grid-column-start: 3;
-        height: 600px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .datos{
+        font-family: 'absolute'; }
+        .container-contacto .grid-main-contacto .grid-main-contactanos .contactanos section p {
+          width: auto;
+          font-size: 25px;
+          font-family: Arial, Helvetica, sans-serif; }
+    .container-contacto .grid-main-contacto .grid-main-formulario {
+      grid-area: grid-main-formulario;
+      background-color: #303030;
+      grid-column-start: 3;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .container-contacto .grid-main-contacto .grid-main-formulario .datos {
         text-align: center;
         font-family: 'absolute';
-        color: black;
-        width: 38rem;
-    }
-    .input{
+        color: black; }
+      .container-contacto .grid-main-contacto .grid-main-formulario .input {
         height: 40px;
-        width: 38rem;
+        width: 600px;
         margin: 5px;
         border: none;
         padding: 0;
         background: transparent;
         color: #fff;
-        font-size: 20px;
-    }
-    .input:hover{
-        background: linear-gradient(to bottom, transparent, #fff);
-    }
-    .textarea{
-        width: 38rem;
-        height: 17rem;
+        font-size: 20px; }
+        .container-contacto .grid-main-contacto .grid-main-formulario .input:hover {
+          background: linear-gradient(to bottom, transparent, #fff); }
+      .container-contacto .grid-main-contacto .grid-main-formulario .textarea {
+        width: 600px;
+        height: 300px;
         background: transparent;
         margin: 5px 5px;
         resize: none;
         border: none;
         color: #fff;
-        font-size: 20px;
-    }
-    .textarea:hover{
-        background: linear-gradient(to bottom, transparent, #fff);
-    }
-    ::placeholder{
+        font-size: 20px; }
+        .container-contacto .grid-main-contacto .grid-main-formulario .textarea:hover {
+          background: linear-gradient(to bottom, transparent, #fff); }
+      .container-contacto .grid-main-contacto .grid-main-formulario ::placeholder {
         font-size: 25px;
-        color: black;
-    }
-    .enviar{
+        color: black; }
+      .container-contacto .grid-main-contacto .grid-main-formulario .enviar {
         font-size: 25px;
-        width: 80%;
-        margin: auto;
-        color:#fff;
+        width: 200px;
+        margin-left: 5px;
+        color: #fff;
         border: none;
-        background-color: rgb(221, 158, 22);
-    }
-    .enviar:hover{
-        background-color: rgb(255, 202, 88)
-    }
+        background-color: #dd9e16; }
+        .container-contacto .grid-main-contacto .grid-main-formulario .enviar:hover {
+          background-color: #ffca58; }
 
-    @media (max-width:1023px) {
-        .grid-main-contacto{
-            display:block;
-        }
-        .grid-main-iframe{
-            grid-area: grid-main-iframe;
-            grid-column-start: 1;
-            height: 37.5rem;
-            width: 100%;
-        }
-        .grid-main-contactanos{
-            grid-area: grid-main-contactanos;
-            grid-column-start: 2;
-            height: 37.5rem;
-            background-color: #48e;
-            width: 100%;
-            flex-direction: column;
-        }
-    }
-    /* TERMINAN LOS CONTACTOS */
+/* TERMINAN LOS CONTACTOS */
+/* TODAS LAS PAGES */
+.fondonegro {
+  background-color: gray;
+  margin: 0; }
 
+h1 {
+  text-align: center;
+  font-family: 'absolute';
+  font-size: 1.8rem; }
 
-    /* TODAS LAS PAGES */
-    .fondonegro{
-        background-color: rgb(59, 59, 59);
-        margin: 0;
-    }
-    h1{
-        text-align: center;
-        font-family: 'absolute';
-        margin: 0;
-    }
+@font-face {
+  font-family: 'absolute';
+  src: url(../fuentes/aAbsoluteEmpire.ttf); }
 
-    @font-face {
-        font-family: 'absolute';
-        src: url(../fuentes/aAbsoluteEmpire.ttf);
-    }
+.grid-heard-nav {
+  background: linear-gradient(to bottom, black, transparent); }
 
-    .grid-heard-nav{
-        background: linear-gradient(to bottom, black, transparent);
-    } 
-    a{
-        color: #fff;
-        font-size: 1rem;
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
-    }
-    
-    a:hover {
-        color: rgb(218, 218, 218);
-        background-size: 100% 2px;
-    }
-    .letra_grande{
-        font-size: 25px !important;
-    }
-    .nav-link{
-        color: #fff !important;
-        font-family: 'absolute' !important;
-    }
-    .navbar{
-        background: linear-gradient(to top, grey, ) !important;
-        z-index: 100;
-    }
-    .navbar-collapse {
-        justify-content: center !important;
-    }
-    .navbar-light .navbar-toggler {
-        border-color: rgb(255 255 255);
-    }
+.subrayado {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  .subrayado:hover {
+    color: #fff;
+    background-size: 100% 2px; }
 
-    .pie-pagina{
-        width: 100%;
-        background-color: #292929 ;
-    }
-    .pie-pagina .grupo-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 15px 0px;
+.letra_grande {
+  font-size: 25px !important; }
 
-    }
-    .pie-pagina .grupo-1 .box figure{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .pie-pagina .grupo-1 .box figure img{
+.nav-link {
+  color: #fff !important;
+  font-family: 'absolute' !important; }
+
+.navbar {
+  background: linear-gradient(to top, grey) !important;
+  z-index: 100; }
+
+.navbar-collapse {
+  justify-content: center !important; }
+
+.navbar-light .navbar-toggler {
+  border-color: #fff; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #222222; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 15px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure img {
         width: 20rem;
-        height: 15rem;
-    }
-    .pie-pagina .grupo-1 .box h2{
-        color: #fff;
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
-    .pie-pagina .grupo-1 .box p{
-        color: #efefef;
-        margin-bottom: 10px;
-    }
-    .pie-pagina .grupo-1 .red-social a{
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: #fff;
-        margin-right: 10px;
-        background-color: #131313;
-        text-align: center;
-        transition: all 300ms ease;
-    }
-    .pie-pagina .grupo-1 .red-social a:hover{
-        color: aqua;
-    }
-    .pie-pagina .grupo-2{
-        background-color: #000000;
-        padding: 15px 0px;
-        text-align: center;
-        color: #fff;
-    }
-    @media screen and (max-width:768px){
-        .pie-pagina .grupo-1{
-            width: 90%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 30px;
-            padding: 35px 0px;
-    }
-}
-    /* TODAS LAS PAGES */
+        height: 15rem; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .pie-pagina .grupo-1 .box p {
+      color: #efefef;
+      margin-bottom: 10px; }
+    .pie-pagina .grupo-1 .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      margin-right: 10px;
+      background-color: #252525;
+      text-align: center;
+      transition: all 300ms ease; }
+      .pie-pagina .grupo-1 .red-social a:hover {
+        color: aqua; }
+  .pie-pagina .grupo-2 {
+    background-color: #000000;
+    padding: 15px 0px;
+    text-align: center;
+    color: #fff; }
+
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+/* TODAS LAS PAGES */

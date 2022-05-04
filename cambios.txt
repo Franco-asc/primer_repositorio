@@ -1,0 +1,8 @@
+CAMBIOS QUE HICIMOS EN ESTA NUEVA ENTREGA
+
+1) Agregue keywords en todas las paginas
+2) Agregue description en todas las paginas
+3) Agregue encabezados y tittle en todas las paginas
+4) Agregue un maps en todos los botones de las redes en el footer 
+5) Agregue un mixin en todos los h1
+6) No ssabia donde agregar un extend asique no pude hacerlos
