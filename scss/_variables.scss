@@ -7,7 +7,7 @@ $tamaño-texto: 2rem;
 
 $color-container: gray;
 $color-titulos: #fff;
-$color-boton: rgb(214, 164, 55);
+$color-boton: rgb(0, 0, 0);
 
 // MEDIAS
 
@@ -16,7 +16,7 @@ $mobile: 500px;
 
 // Maps
 
-$mapredes:(whatsapp: green, instagram:#fff, facebook:blue);
+$mapredes:(whatsapp: green, instagram:rgb(75, 0, 50), facebook:blue);
 
 @each $red, $color in $mapredes {
     .#{$red}{
@@ -29,7 +29,7 @@ $mapredes:(whatsapp: green, instagram:#fff, facebook:blue);
 // Mixin
 
 @mixin titulos {
-    text-align: center;
-    font-family: 'absolute';
-    font-size: 1.8rem;
+    text-align: center !important;
+    font-family: 'absolute' !important;
+    font-size: 2rem !important;
 }

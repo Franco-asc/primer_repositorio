@@ -3,7 +3,7 @@
     .container-index {
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr; 
+        grid-template-rows: .2fr .2fr 1fr .1fr 0.1fr; 
         gap: 0px 0px; 
         height: 98vh;
         grid-template-areas: 
@@ -59,6 +59,7 @@
     li{
         list-style: none;
         width: 25%;
+        height: 4rem;
         margin: .1rem;
         text-align: center;
     }
@@ -170,7 +171,6 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 2rem;
                 margin: 5px;
             }
             .grid-main-labarberia {  
@@ -184,19 +184,19 @@
             }
             .grid-texto-labarberia{
                 float: right;
-                font-size: 1rem;
+                font-size: 1.3rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 width: 50%;
                 color: rgb(0, 0, 0);
-                .grid-texto-nuestroequipo{
-                    border: solid;
-                    border-color: #fff;
+                .btn{
+                    border: none;
+                    border-radius: 10px;
+                    background:rgb(221, 158, 22);
                     margin: 5px;
-                    padding: 3px;
-                    color: #fff;
+                    color: #000;
                     &:hover{
-                        color: black;
+                        color: rgb(255, 255, 255);
                         background-color: $color-boton;
-                        border-color: $color-boton;
                     }
                 }
             }
@@ -253,7 +253,6 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 1.5rem;
             }
             .grid-foto-labarberia {
                 height: 15.6rem;
@@ -264,7 +263,6 @@
                 height: auto;
                 .grid-texto-labarberia{
                     text-align: center;
-                    font-size: 1rem;
                     width: 100%;
                     color: rgb(0, 0, 0);
                 }
@@ -295,13 +293,11 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 1.1rem;
             }
             .grid-main-labarberia {  
                 height: auto;
                 .grid-texto-labarberia{
                     text-align: center;
-                    font-size: 1rem;
                     width: 100%;
                     color: rgb(0, 0, 0);
                 }
@@ -322,7 +318,7 @@
         .container-colecciones {  
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.4fr 0.1fr 2.2fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 2.2fr 1fr;
             gap: 0px 0px;
             margin: 0;
             grid-auto-flow: row;
@@ -336,7 +332,6 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 25px;
             }
             .grid-main-colecciones{
                 grid-area: grid-main-colecciones;
@@ -367,7 +362,7 @@
         .container-servicios {  
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.4fr 0.1fr 2fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
             gap: 0px 0px;
             margin: 0;
             grid-auto-flow: row;
@@ -381,43 +376,84 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 25px;
             }
             .grid-main-servicios{
                 grid-area: grid-main-servicios;
                 height: auto;
-                table{
-                    border-style: solid;
-                    border-color: black;   
-                    height: 500px;
-                    width: 800px;
-                    background-color: #fff;
-                    font-size: 30px;
-                }
-                td{
-                    border: 3px rgb(0, 0, 0) solid ;
-                }
-                .table{
-                    width: 80% !important;
-                }
+                
             }
             .grid-main-table{
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 flex-wrap: wrap;
-                height: 600px;
+                .card{
+                    margin: .8rem .9rem;
+                    height: 500px;
+                    font-size: 1.5rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    color: #252525;
+                    background: linear-gradient(to bottom, #fff, #222);
+                    .card-title{
+                        background-color: #222;
+                        border: solid #efefef 1px;
+                        color: #fff;
+                        border-radius: 10px;
+                    }
+                    .btn{
+                        background: #000;
+                        border: none;
+                        &:hover{
+                            background: #efefef;
+                            color: #000;
+                        }
+                    }
+                }
             }
         }
 
         /* TERMINAN LOS SERVICIOS */
+        /*EMPIEZAN SERVICIOS MEDIA CELULAR*/ 
+        @media (max-width: 1023px){
+            .container-servicios {  
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 0.1fr 2.5fr 1fr;
+                gap: 0px 0px;
+                margin: 0;
+                grid-auto-flow: row;
+                grid-template-areas:
+                "grid-heard-nav"
+                "grid-title-servicios"
+                "grid-main-servicios"
+                "grid-footer-labarberia ";
+            }
+        }
+        @media (max-width: 500px){
+            .container-servicios {  
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
+                gap: 0px 0px;
+                margin: 0;
+                grid-auto-flow: row;
+                grid-template-areas:
+                "grid-heard-nav"
+                "grid-title-servicios"
+                "grid-main-servicios"
+                "grid-footer-labarberia ";
+            }
+        }
+        /*TERMINAN SERVICIOS MEDIA CELULAR*/ 
         /* EMPIEZAN LOS CONTACTOS */
-
-        .container-contacto {  
+        .container-contacto {
             display: grid;
             gap: 20px 0px;
             margin: 0;
             grid-auto-flow: row;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
             grid-template-areas:
             "grid-heard-nav"
             "grid-title-contacto"
@@ -428,18 +464,18 @@
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-                font-size: 25px;
             }
             .grid-main-contacto{
                 grid-area: grid-main-contacto;
                 display: grid;
                 margin: 0 20px;
                 grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 0fr;
                 .grid-main-iframe{
                     grid-area: grid-main-iframe;
-                    grid-column-start: 1;
-                    height: 600px;
-                    width: 621px;
+                    grid-column: 1;
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     iframe{
@@ -449,31 +485,32 @@
                 }
                 .grid-main-contactanos{
                     grid-area: grid-main-contactanos;
-                    grid-column-start: 2;
-                    height: 600px;
+                    grid-column: 2;
+                    height: 100%;
                     background-color: #48e;
-                    width: 621px;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
                     .contactanos{
-                        height: 50px;
-                        width: 500px;
-                        margin: 10px;
+                        height:30px;
+                        margin: 15px;
+                        font-size: 2rem;
                         font-family: 'absolute';
-                        section p {
-                            width: auto;
-                            font-size: 25px;
-                            font-family: Arial, Helvetica, sans-serif;
-                
-                        }
+                    }
+                    .contactanos-texto {
+                        width: auto;
+                        font-size: 1.1rem;
+                        margin: 10px;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
                     }
                 }
                 .grid-main-formulario{
                     grid-area: grid-main-formulario;
                     background-color: rgb(48, 48, 48);
-                    grid-column-start: 3;
-                    height: 600px;
+                    grid-column: 3;
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
@@ -483,9 +520,10 @@
                         color: black;
                     }
                     .input{
+                        display: flex;
                         height: 40px;
-                        width: 600px;
-                        margin: 5px;
+                        width: 80%;
+                        margin: 5px auto;
                         border: none;
                         padding: 0;
                         background: transparent;
@@ -496,10 +534,11 @@
                         }
                     }
                     .textarea{
-                        width: 600px;
+                        display: flex;
+                        width: 80%;
                         height: 300px;
                         background: transparent;
-                        margin: 5px 5px;
+                        margin: 5px auto;
                         resize: none;
                         border: none;
                         color: #fff;
@@ -509,25 +548,25 @@
                         }
                     }
                     ::placeholder{
-                        font-size: 25px;
+                        font-size: 1.5rem;
                         color: black;
                     }
                     .enviar{
-                        font-size: 25px;
-                        width: 200px;
-                        margin-left: 5px;
-                        color:#fff;
+                        font-size: 1.5rem;
+                        display: flex;
+                        margin: 2px auto;
+                        
+                        color:rgb(0, 0, 0);
                         border: none;
-                        background-color: rgb(221, 158, 22);
+                        background-color: rgb(255, 254, 253);
                         &:hover{
-                            background-color: rgb(255, 202, 88)
+                            background-color: rgb(0, 0, 0);
+                            color:#efefef;
                         }
                     }
                 }
             }
         }
-
-        
         /* TERMINAN LOS CONTACTOS */
         /* TODAS LAS PAGES */
         .fondonegro{
@@ -556,10 +595,6 @@
                 color:$color-titulos;
                 background-size: 100% 2px;
             }
-        }
-
-        .letra_grande{
-            font-size: 25px !important;
         }
         .nav-link{
             color: #fff !important;
@@ -618,7 +653,7 @@
                     text-align: center;
                     transition: all 300ms ease;
                     &:hover{
-                        color: aqua;
+                        color: rgb(255, 255, 255) !important;
                     }
                 }
             }
