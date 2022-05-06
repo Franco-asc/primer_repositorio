@@ -205,7 +205,7 @@ li {
   .grid-foto-labarberia {
     height: 15.6rem;
     width: 20rem;
-    margin: auto; }
+    margin: 10px 20px; }
   .grid-main-labarberia {
     height: auto; }
     .grid-main-labarberia .grid-texto-labarberia {
@@ -446,6 +446,13 @@ main.grid-main-colecciones {
           color: #efefef; }
 
 /* TERMINAN LOS CONTACTOS */
+/*EMPIEZAN SERVICIOS MEDIA CELULAR*/
+@media (max-width: 500px) {
+  .container-contacto .grid-main-contacto {
+    display: flex;
+    flex-direction: column; } }
+
+/* TERMINAN LOS CONTACTOS MEDIA CELULAR*/
 /* TODAS LAS PAGES */
 .fondonegro {
   background-color: gray;
