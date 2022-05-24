@@ -317,7 +317,7 @@
         .container-colecciones {  
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.1fr 2.2fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 1.5fr .3fr;
             gap: 0px 0px;
             margin: 0;
             grid-auto-flow: row;
@@ -325,7 +325,7 @@
             "grid-heard-nav"
             "grid-title-colecciones"
             "grid-main-colecciones"
-            "grid-footer-labarberia ";
+            "grid-footer-labarberia";
             .grid-title-colecciones{
                 grid-area: grid-title-colecciones;
                 color: #fff;
@@ -346,25 +346,17 @@
                 height: 600px;
                 width: 900px;
             }
+            .w-100 {
+                width: 70% !important;
+            }
         }
-        #carouselExampleControls{
-            width: 50%;
-        }
-        .w-100 {
-            width: 50%;
-        }
-        main.grid-main-colecciones {
-            display: flex;
-            justify-content: center;
-        }
-
         /* TERMINAN LAS COLECCIONES */
         /* EMPIEZAN LOS SERVICIOS */
 
         .container-servicios {  
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 2fr .1fr;
             gap: 0px 0px;
             margin: 0;
             grid-auto-flow: row;
@@ -421,7 +413,7 @@
             .container-servicios {  
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 0.2fr 0.1fr 2.5fr 1fr;
+                grid-template-rows: 0.2fr 0.1fr 2fr .1fr;
                 gap: 0px 0px;
                 margin: 0;
                 grid-auto-flow: row;
@@ -436,7 +428,7 @@
             .container-servicios {  
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
+                grid-template-rows: 0.2fr 0.1fr 2fr .1fr;
                 gap: 0px 0px;
                 margin: 0;
                 grid-auto-flow: row;
@@ -455,7 +447,7 @@
             margin: 0;
             grid-auto-flow: row;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.1fr 2fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 1.9fr .1fr;
             grid-template-areas:
             "grid-heard-nav"
             "grid-title-contacto"
@@ -473,6 +465,11 @@
                 margin: 0 20px;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 0fr;
+                grid-template-areas: 
+                "grid-main-iframe grid-main-contactanos grid-main-formulario"
+                "grid-main-iframe grid-main-contactanos grid-main-formulario"
+                ;
+                
                 .grid-main-iframe{
                     grid-area: grid-main-iframe;
                     grid-column: 1;
@@ -519,14 +516,18 @@
                     .datos{
                         text-align: center;
                         font-family: 'absolute';
-                        color: black;
+                        color: #fafafa;
                     }
                     .input{
                         display: flex;
                         height: 40px;
                         width: 80%;
+
+                        border-bottom: 2px solid white;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
                         margin: 5px auto;
-                        border: none;
                         padding: 0;
                         background: transparent;
                         color: #fff;
@@ -542,7 +543,10 @@
                         background: transparent;
                         margin: 5px auto;
                         resize: none;
-                        border: none;
+                        border-bottom: 2px solid white;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
                         color: #fff;
                         font-size: 20px;
                         &:hover{
@@ -551,7 +555,7 @@
                     }
                     ::placeholder{
                         font-size: 1.5rem;
-                        color: black;
+                        color: #fafafa;
                     }
                     .enviar{
                         font-size: 1.5rem;
@@ -570,12 +574,14 @@
             }
         }
         /* TERMINAN LOS CONTACTOS */
-        /*EMPIEZAN SERVICIOS MEDIA CELULAR*/
-        @media (max-width: 500px){
+        /*EMPIEZAN SERVICIOS MEDIA TABLET Y CELULAR*/
+        @media (max-width: 1023px){
             .container-contacto .grid-main-contacto {
                 display: flex;
                 flex-direction: column;
+                height: 100% ;
             }
+            
         }
         /* TERMINAN LOS CONTACTOS MEDIA CELULAR*/
         /* TODAS LAS PAGES */
@@ -583,8 +589,14 @@
             background-color: gray;
             margin: 0;
         }
+        li a{
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 0 1rem;
+        }
         h1{
             @include titulos;
+            margin-top: 10px !important;
         }
         @font-face {
             font-family: 'absolute';
@@ -613,6 +625,7 @@
         .navbar{
             background: linear-gradient(to top, grey, ) !important;
             z-index: 100;
+            padding: 0 !important;
         }
         .navbar-collapse {
             justify-content: center !important;
@@ -621,6 +634,7 @@
             border-color: #fff;
         }
         .pie-pagina{
+            grid-area: grid-footer-labarberia;
             width: 100%;
             background-color: #222222;
             .grupo-1{
@@ -680,6 +694,9 @@
                 grid-template-columns: repeat(1, 1fr);
                 grid-gap: 30px;
                 padding: 35px 0px;
+                }
+                div small{
+                    justify-content: center;
                 }
             }
         /* TODAS LAS PAGES */
