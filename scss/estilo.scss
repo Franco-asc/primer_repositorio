@@ -155,7 +155,7 @@
         .container-barberia {  
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+            grid-template-rows: 0.2fr 0.1fr 3fr 1fr;
             gap: 0px 0px;
             height: 100vh;
             margin: 0;
@@ -174,32 +174,41 @@
                 margin: 5px;
             }
             .grid-main-labarberia {  
-                grid-area: grid-main-labarberia;
-                margin: 1rem 0rem;
-            }
-            .grid-foto-labarberia {
-                height: 34.3rem;
-                width: 50rem;
-                margin: 0rem 2rem;
-            }
-            .grid-texto-labarberia{
-                float: right;
-                font-size: 1.3rem;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                width: 50%;
-                color: rgb(0, 0, 0);
-                .btn{
-                    border: none;
-                    border-radius: 10px;
-                    background:rgb(221, 158, 22);
-                    margin: 5px;
-                    color: #000;
-                    &:hover{
-                        color: rgb(255, 255, 255);
-                        background-color: $color-boton;
-                    }
+                display: grid;
+                margin: 0 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 20px 20px;
+                grid-template-areas: 
+                "grid-foto-labarberia grid-texto-labarberia"
+                "grid-foto-labarberia grid-texto-labarberia"
+                ;
+                .grid-foto-labarberia {
+                    grid-area: grid-foto-labarberia;
+                    height: 90% ;
+                    width: 80% ;
+                    margin: 10px;
                 }
-            }
+                .grid-texto-labarberia{
+                    grid-area: grid-texto-labarberia;
+                    text-align: left;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.1rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    .btn{
+                        border: none;
+                        border-radius: 10px;
+                        background:rgb(221, 158, 22);
+                        margin: 5px;
+                        color: #000;
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                            background-color: $color-boton;
+                        }
+                    }
+        }
+        .pie-pagina{
+            grid-area: grid-footer-labarberia;
         }
         .grid-footer1{
             display: flex;
@@ -210,6 +219,8 @@
             float: right;
             margin: 5px;
         }
+    }
+}
         /* TERMINA LA BABERIA */
         /* EMPIEZA MEDIA TABLET BARBERIA */
         @media (max-width: 1023px){
@@ -249,23 +260,30 @@
                 margin: 1px;
                 text-align: center;
             }
+            .grid-main-labarberia {  
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 20px 20px;
+                grid-template-areas: 
+                "grid-foto-labarberia grid-foto-labarberia"
+                "grid-texto-labarberia grid-texto-labarberia"
+                ;
+                .grid-foto-labarberia {
+                    grid-area: grid-foto-labarberia;
+                    grid-row: 1;
+                    width: 100% !important;
+                }
+                .grid-texto-labarberia{
+                    grid-area: grid-texto-labarberia;
+                    grid-row: 2;
+                    font-size: 0.9rem !important;
+                }
+            }
             .grid-title-labarberia {  
                 color: #fff;
                 text-align: center;
                 font-family: 'absolute';
-            }
-            .grid-foto-labarberia {
-                height: 15.6rem;
-                width: 20rem;
-                margin: 10px 20px;
-            }
-            .grid-main-labarberia {  
-                height: auto;
-                .grid-texto-labarberia{
-                    text-align: center;
-                    width: 100%;
-                    color: rgb(0, 0, 0);
-                }
             }
             .grid-footer1{
                 display: flex;
@@ -275,41 +293,14 @@
         /* TERMINA MEDIA TABLET BARBERIA*/
         /* EMPIEZA MEDIA CELULAR BARBERIA*/
         @media (max-width: 500px) {
-            .container-barberia {  
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-                gap: 0px 0px;
-                margin: 0;
-                grid-auto-flow: row;
-                grid-template-areas:
-                "grid-heard-nav "
-                "grid-title-labarberia "
-                "grid-main-labarberia"
-                "grid-footer-labarberia ";
-            } 
-            .grid-title-labarberia {  
-                color: #fff;
-                text-align: center;
-                font-family: 'absolute';
-            }
-            .grid-main-labarberia {  
-                height: auto;
+            .container-barberia .grid-main-labarberia {
+                display: flex;
+                flex-direction: column;
                 .grid-texto-labarberia{
                     text-align: center;
-                    width: 100%;
-                    color: rgb(0, 0, 0);
                 }
             }
-            .grid-foto-labarberia {
-                height: 10rem;
-                width: 15rem;
-                display: flex;
-                margin: auto;
-            }
-            .grid-footer-labarberia { 
-                grid-area: grid-footer-labarberia; 
-            } 
+
     }
         /* TERMINA MEDIA CELULAR BARBERIA */    
         /* EMPIEZA LAS COLECCIONES */
@@ -584,6 +575,50 @@
             
         }
         /* TERMINAN LOS CONTACTOS MEDIA CELULAR*/
+
+        /* EMPIEZA LA PAGINA ERROR */ 
+
+        .body-error{
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            .container-error{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+                .img-error{
+                    width: 50%;
+                }
+                .h1-error{
+                    color: #efefef;
+                    font-size: 1.3rem;
+                    padding: 15px;
+                }
+                .boton-error{
+                    padding: 13px 30px;
+                    border-radius: 15px;
+                    border: none;
+                    background-color: #222222;
+                    color: #efefef;
+                    &:hover{
+                        background-color: #efefef;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:630px) {
+            .h1-error{
+                font-size: 1rem;
+            }
+        }
+        /* EMPIEZA LA PAGINA ERROR */
+
         /* TODAS LAS PAGES */
         .fondonegro{
             background-color: gray;

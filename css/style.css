@@ -14,11 +14,7 @@
   grid-template-rows: .2fr .2fr 1fr .1fr 0.1fr;
   gap: 0px 0px;
   height: 98vh;
-  grid-template-areas: "header"
- "title"
- "main"
- "footer"
- "footer-1"; }
+  grid-template-areas: "header" "title" "main" "footer" "footer-1"; }
   .container-index .header {
     grid-area: header; }
   .container-index .title {
@@ -78,11 +74,7 @@ li {
     grid-template-rows: 0.2fr .2fr 1fr .1fr 0.1fr;
     gap: 0px 0px;
     height: 98vh;
-    grid-template-areas: "header"
- "title"
- "main"
- "footer"
- "footer-1"; }
+    grid-template-areas: "header" "title" "main" "footer" "footer-1"; }
   a {
     font-size: 1rem; }
   ul {
@@ -108,11 +100,7 @@ li {
     grid-template-rows: 0.2fr 1fr .1fr 0.1fr;
     gap: 0px 0px;
     height: 98vh;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    "footer-1"; }
+    grid-template-areas: "header" "main" "footer" "footer-1"; }
   body {
     background-image: none; }
   .fondo {
@@ -136,16 +124,12 @@ li {
 .container-barberia {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 3fr 1fr;
   gap: 0px 0px;
   height: 100vh;
   margin: 0;
   grid-auto-flow: row;
-  grid-template-areas: 
-  "grid-heard-nav "
-  "grid-title-labarberia "
-  "grid-main-labarberia"
-  "grid-footer-labarberia"; }
+  grid-template-areas: "grid-heard-nav " "grid-title-labarberia " "grid-main-labarberia" "grid-footer-labarberia"; }
   .container-barberia .grid-title-labarberia {
     grid-area: grid-title-labarberia;
     color: #fff;
@@ -153,36 +137,41 @@ li {
     font-family: 'absolute';
     margin: 5px; }
   .container-barberia .grid-main-labarberia {
-    grid-area: grid-main-labarberia;
-    margin: 1rem 0rem; }
-  .container-barberia .grid-foto-labarberia {
-    height: 34.3rem;
-    width: 50rem;
-    margin: 0rem 2rem; }
-  .container-barberia .grid-texto-labarberia {
-    float: right;
-    font-size: 1.3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 50%;
-    color: black; }
-    .container-barberia .grid-texto-labarberia .btn {
-      border: none;
-      border-radius: 10px;
-      background: #dd9e16;
-      margin: 5px;
-      color: #000; }
-      .container-barberia .grid-texto-labarberia .btn:hover {
-        color: white;
-        background-color: black; }
-
-.grid-footer1 {
-  display: flex;
-  justify-content: center; }
-
-.redes {
-  display: flex;
-  float: right;
-  margin: 5px; }
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "grid-foto-labarberia grid-texto-labarberia" "grid-foto-labarberia grid-texto-labarberia"; }
+    .container-barberia .grid-main-labarberia .grid-foto-labarberia {
+      grid-area: grid-foto-labarberia;
+      height: 90%;
+      width: 80%;
+      margin: 10px; }
+    .container-barberia .grid-main-labarberia .grid-texto-labarberia {
+      grid-area: grid-texto-labarberia;
+      text-align: left;
+      color: black;
+      font-size: 1.1rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .container-barberia .grid-main-labarberia .grid-texto-labarberia .btn {
+        border: none;
+        border-radius: 10px;
+        background: #dd9e16;
+        margin: 5px;
+        color: #000; }
+        .container-barberia .grid-main-labarberia .grid-texto-labarberia .btn:hover {
+          color: white;
+          background-color: black; }
+    .container-barberia .grid-main-labarberia .pie-pagina {
+      grid-area: grid-footer-labarberia; }
+    .container-barberia .grid-main-labarberia .grid-footer1 {
+      display: flex;
+      justify-content: center; }
+    .container-barberia .grid-main-labarberia .redes {
+      display: flex;
+      float: right;
+      margin: 5px; }
 
 /* TERMINA LA BABERIA */
 /* EMPIEZA MEDIA TABLET BARBERIA */
@@ -194,10 +183,7 @@ li {
     gap: 0px 0px;
     margin: 0;
     grid-auto-flow: row;
-    grid-template-areas: "grid-heard-nav "
- "grid-title-labarberia "
- "grid-main-labarberia"
- "grid-footer-labarberia "; }
+    grid-template-areas: "grid-heard-nav " "grid-title-labarberia " "grid-main-labarberia" "grid-footer-labarberia "; }
   .grid-heard-nav {
     grid-area: grid-heard-nav;
     display: flex;
@@ -217,20 +203,24 @@ li {
     width: 200px;
     margin: 1px;
     text-align: center; }
+  .grid-main-labarberia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "grid-foto-labarberia grid-foto-labarberia" "grid-texto-labarberia grid-texto-labarberia"; }
+    .grid-main-labarberia .grid-foto-labarberia {
+      grid-area: grid-foto-labarberia;
+      grid-row: 1;
+      width: 100% !important; }
+    .grid-main-labarberia .grid-texto-labarberia {
+      grid-area: grid-texto-labarberia;
+      grid-row: 2;
+      font-size: 0.9rem !important; }
   .grid-title-labarberia {
     color: #fff;
     text-align: center;
     font-family: 'absolute'; }
-  .grid-foto-labarberia {
-    height: 15.6rem;
-    width: 20rem;
-    margin: 10px 20px; }
-  .grid-main-labarberia {
-    height: auto; }
-    .grid-main-labarberia .grid-texto-labarberia {
-      text-align: center;
-      width: 100%;
-      color: black; }
   .grid-footer1 {
     display: flex;
     justify-content: center; } }
@@ -238,34 +228,11 @@ li {
 /* TERMINA MEDIA TABLET BARBERIA*/
 /* EMPIEZA MEDIA CELULAR BARBERIA*/
 @media (max-width: 500px) {
-  .container-barberia {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.1fr 3fr 1fr;
-    gap: 0px 0px;
-    margin: 0;
-    grid-auto-flow: row;
-    grid-template-areas: "grid-heard-nav "
- "grid-title-labarberia "
- "grid-main-labarberia"
- "grid-footer-labarberia "; }
-  .grid-title-labarberia {
-    color: #fff;
-    text-align: center;
-    font-family: 'absolute'; }
-  .grid-main-labarberia {
-    height: auto; }
-    .grid-main-labarberia .grid-texto-labarberia {
-      text-align: center;
-      width: 100%;
-      color: black; }
-  .grid-foto-labarberia {
-    height: 10rem;
-    width: 15rem;
+  .container-barberia .grid-main-labarberia {
     display: flex;
-    margin: auto; }
-  .grid-footer-labarberia {
-    grid-area: grid-footer-labarberia; } }
+    flex-direction: column; }
+    .container-barberia .grid-main-labarberia .grid-texto-labarberia {
+      text-align: center; } }
 
 /* TERMINA MEDIA CELULAR BARBERIA */
 /* EMPIEZA LAS COLECCIONES */
@@ -276,10 +243,7 @@ li {
   gap: 0px 0px;
   margin: 0;
   grid-auto-flow: row;
-  grid-template-areas: "grid-heard-nav"
- "grid-title-colecciones"
- "grid-main-colecciones"
- "grid-footer-labarberia"; }
+  grid-template-areas: "grid-heard-nav" "grid-title-colecciones" "grid-main-colecciones" "grid-footer-labarberia"; }
   .container-colecciones .grid-title-colecciones {
     grid-area: grid-title-colecciones;
     color: #fff;
@@ -308,10 +272,7 @@ li {
   gap: 0px 0px;
   margin: 0;
   grid-auto-flow: row;
-  grid-template-areas: "grid-heard-nav"
- "grid-title-servicios"
- "grid-main-servicios"
- "grid-footer-labarberia "; }
+  grid-template-areas: "grid-heard-nav" "grid-title-servicios" "grid-main-servicios" "grid-footer-labarberia "; }
   .container-servicios .grid-title-servicios {
     grid-area: grid-title-servicios;
     color: #fff;
@@ -355,10 +316,7 @@ li {
     gap: 0px 0px;
     margin: 0;
     grid-auto-flow: row;
-    grid-template-areas: "grid-heard-nav"
- "grid-title-servicios"
- "grid-main-servicios"
- "grid-footer-labarberia "; } }
+    grid-template-areas: "grid-heard-nav" "grid-title-servicios" "grid-main-servicios" "grid-footer-labarberia "; } }
 
 @media (max-width: 500px) {
   .container-servicios {
@@ -368,10 +326,7 @@ li {
     gap: 0px 0px;
     margin: 0;
     grid-auto-flow: row;
-    grid-template-areas: "grid-heard-nav"
- "grid-title-servicios"
- "grid-main-servicios"
- "grid-footer-labarberia "; } }
+    grid-template-areas: "grid-heard-nav" "grid-title-servicios" "grid-main-servicios" "grid-footer-labarberia "; } }
 
 /*TERMINAN SERVICIOS MEDIA CELULAR*/
 /* EMPIEZAN LOS CONTACTOS */
@@ -382,10 +337,7 @@ li {
   grid-auto-flow: row;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 0.1fr 1.9fr .1fr;
-  grid-template-areas: "grid-heard-nav"
- "grid-title-contacto"
- "grid-main-contacto"
- "grid-footer-labarberia "; }
+  grid-template-areas: "grid-heard-nav" "grid-title-contacto" "grid-main-contacto" "grid-footer-labarberia "; }
   .container-contacto .grid-title-contacto {
     grid-area: grid-title-contacto;
     color: #fff;
@@ -397,8 +349,7 @@ li {
     margin: 0 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0fr;
-    grid-template-areas: "grid-main-iframe grid-main-contactanos grid-main-formulario"
- "grid-main-iframe grid-main-contactanos grid-main-formulario"; }
+    grid-template-areas: "grid-main-iframe grid-main-contactanos grid-main-formulario" "grid-main-iframe grid-main-contactanos grid-main-formulario"; }
     .container-contacto .grid-main-contacto .grid-main-iframe {
       grid-area: grid-main-iframe;
       grid-column: 1;
@@ -494,6 +445,41 @@ li {
     height: 100%; } }
 
 /* TERMINAN LOS CONTACTOS MEDIA CELULAR*/
+/* EMPIEZA LA PAGINA ERROR */
+.body-error {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .body-error .container-error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center; }
+    .body-error .container-error .img-error {
+      width: 50%; }
+    .body-error .container-error .h1-error {
+      color: #efefef;
+      font-size: 1.3rem;
+      padding: 15px; }
+    .body-error .container-error .boton-error {
+      padding: 13px 30px;
+      border-radius: 15px;
+      border: none;
+      background-color: #222222;
+      color: #efefef; }
+      .body-error .container-error .boton-error:hover {
+        background-color: #efefef;
+        color: #000; }
+
+@media screen and (max-width: 630px) {
+  .h1-error {
+    font-size: 1rem; } }
+
+/* EMPIEZA LA PAGINA ERROR */
 /* TODAS LAS PAGES */
 .fondonegro {
   background-color: gray;
